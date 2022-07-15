@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: sqlite3:3.31.1
+        image: postgres:11-alpine
         ports:
           - "5432:5432"
         env:
